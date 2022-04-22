@@ -14,7 +14,7 @@ But if you
 
 in terminal then you can see only /usr/lib/xorg/Xorg.
 
-I means that application on your computer can not use graphics card because kernel cannot detect newest hardware RTX 3080 Ti.
+It means that application on your computer can not use graphics card because kernel cannot detect newest hardware RTX 3080 Ti.
 If correctly installed, also /usr/bin/gnome-shell should be shown in nvidia-smi
 
 
@@ -30,7 +30,7 @@ Now, Kernel 5.17-8ubuntu1~bionic is available in liquorix.
 Please refer https://liquorix.net .
 
 
-*If you already installed nvidia-driver-510, you can let driver installed and just install newest kernel.
+*If you already installed nvidia-driver-510 on your computer, you can let driver installed and can just install newest kernel.
 *You don't have to uninstall before updating kernel.
 
 
@@ -38,11 +38,11 @@ Please refer https://liquorix.net .
     sudo apt-get update
 
 
-and if you are in x64-based computer
+and if you are in x64-based computer,
 
     sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 
-if not follow instructions in https://launchpad.net/~damentz/+archive/ubuntu/liquorix.
+If not follow instructions in https://launchpad.net/~damentz/+archive/ubuntu/liquorix.
 
 
 and reboot then,
