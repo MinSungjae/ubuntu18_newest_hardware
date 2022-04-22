@@ -38,7 +38,7 @@ and if you are in x64-based computer
 
     sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 
-if not follow instructions in https://liquorix.net.
+if not follow instructions in https://launchpad.net/~damentz/+archive/ubuntu/liquorix.
 
 
 and reboot then,
