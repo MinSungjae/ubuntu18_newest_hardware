@@ -55,3 +55,41 @@ Enjoy!
 
 *I think it will works for not only Bionic but also ubuntu focal(20.04), ubuntu hirsute(21.04), ubuntu impish(21.10).
 *If you have trouble in installing NVIDIA driver for old Ubuntu just try and please leave a comment it works or not.
+
+
+## Setting NVIDIA Driver and CUDA
+
+### Uninstall pre-existing NVIDIA DRIVER
+
+    sudo apt-get purge nvidia*
+    sudo apt-get autoremove
+    sudo apt-get autoclean
+   
+#### Remove CUDA clean
+
+    sudo rm -rf /usr/local/cuda*
+    sudo apt-get --purge remove 'cuda*'
+    sudo apt-get autoremove --purge 'cuda*'
+    
+#### Check if ALL drivers and CUDA are uninstalled and removed
+
+    sudo dpkg -l | grep nvidia
+    
+if something remains,
+
+    sudo apt-get remove --purge [name of package]
+    
+for all remain packages
+
+    sudo dpkg-l | grep cuda
+    
+if something remains,
+
+    sudo apt-get remove --purge [name of package]
+    
+### Install new nvidia driver
+
+    sudo apt-get update
+    sudo apt-get install nvidia-driver-510
+
+
