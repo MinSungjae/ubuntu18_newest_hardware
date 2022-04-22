@@ -21,9 +21,9 @@ Furthermore, many newest hardware(ex: WiFi-6 NIC, Trackpad, Webcam, Bluetooth mo
 Try install higher version of kernel for Ubuntu bionic(18) first. For now official canonical version 5.4.* does not support our hardware.
 So we have to choose alternative way.
 
-Install bionic capable custom Kernel update
+Install bionic capable custom Kernel update.
 Now, Kernel 5.17-8ubuntu1~bionic is available in liquorix.
-Please refer https://liquorix.net
+Please refer https://liquorix.net .
 
 
 *If you already installed nvidia-driver-510, you can let driver installed and just install newest kernel.
@@ -47,3 +47,7 @@ you can see
 and also, many hardware is now available in your computer!
 
 Enjoy!
+
+
+*I think it will works for not only Bionic but also ubuntu focal(20.04), ubuntu hirsute(21.04), ubuntu impish(21.10).
+*If you have trouble in installing NVIDIA driver for old Ubuntu just try and please leave a comment it works or not.
