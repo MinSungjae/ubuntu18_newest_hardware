@@ -5,12 +5,16 @@ Instruction for installing and setup ubuntu 18.04 for newest hardware
 
 ### Problem:
 The lastest kernel version for ubuntu 18.04 is 5.4.*(for now: 189)
-But it does not support Intel 12th gen iGPU
+But it does not support Intel 12th-gen chipset and iGPU.
 
-In this case, if you try to install nvidia-driver-510 then it seems like correctly installed.
-But you can see only
-/usr/lib/xorg/Xorg in nvidia-smi
-because kernel cannot detect newest hardware RTX 3080 Ti
+In this case, if you try to install nvidia-driver-510, then it seems like successfully installed.
+But if you
+
+    nvidia-smi
+
+in terminal then you can see only /usr/lib/xorg/Xorg.
+
+I means that application on your computer can not use graphics card because kernel cannot detect newest hardware RTX 3080 Ti.
 If correctly installed, also /usr/bin/gnome-shell should be shown in nvidia-smi
 
 
