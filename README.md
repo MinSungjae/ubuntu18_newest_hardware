@@ -57,6 +57,26 @@ Enjoy!
 *If you have trouble in installing NVIDIA driver for old Ubuntu just try and please leave a comment it works or not.
 
 
+### Install WiFi6 (AX210) Driver
+
+        sudo apt update
+        sudo apt-get install -y git
+        sudo apt-get install -y build-essential
+
+        git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+        cd linux-firmware
+        sudo cp iwlwifi-* /lib/firmware/
+        cd ..
+
+        git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
+        cd backport-iwlwifi
+        make defconfig-iwlwifi-public
+        make -j4
+        sudo make install
+ 
+        sudo update-initramfs -u
+        sudo reboot
+
 ## Setting NVIDIA Driver and CUDA
 
 ### Uninstall pre-existing NVIDIA DRIVER
