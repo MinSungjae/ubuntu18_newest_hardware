@@ -91,7 +91,7 @@ Enjoy!
     sudo apt-get --purge remove 'cuda*'
     sudo apt-get autoremove --purge 'cuda*'
     
-#### Check if ALL drivers and CUDA are uninstalled and removed
+#### Check if ALL drivers and CUDA are uninstalled and removed, if not clean remove
 
     sudo dpkg -l | grep nvidia
     
