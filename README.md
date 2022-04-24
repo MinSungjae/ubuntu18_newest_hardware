@@ -59,23 +59,23 @@ Enjoy!
 
 ### Install WiFi6 (AX210) Driver
 
-        sudo apt update
-        sudo apt-get install -y git
-        sudo apt-get install -y build-essential
+    sudo apt update
+    sudo apt-get install -y git
+    sudo apt-get install -y build-essential
 
-        git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
-        cd linux-firmware
-        sudo cp iwlwifi-* /lib/firmware/
-        cd ..
+    git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+    cd linux-firmware
+    sudo cp iwlwifi-* /lib/firmware/
+    cd ..
 
-        git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
-        cd backport-iwlwifi
-        make defconfig-iwlwifi-public
-        make -j4
-        sudo make install
+    git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
+    cd backport-iwlwifi
+    make defconfig-iwlwifi-public
+    make -j4
+    sudo make install
  
-        sudo update-initramfs -u
-        sudo reboot
+    sudo update-initramfs -u
+    sudo reboot
 
 ## Setting NVIDIA Driver and CUDA
 
