@@ -85,7 +85,7 @@ Enjoy!
     sudo apt-get autoremove
     sudo apt-get autoclean
    
-#### Remove CUDA clean
+#### Remove CUDA cleanly
 
     sudo rm -rf /usr/local/cuda*
     sudo apt-get --purge remove 'cuda*'
