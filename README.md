@@ -52,7 +52,7 @@ and also, many hardware is now available in your computer!
 
 Enjoy!
 
-### If desktop does not appear after installing kernel and reboot,
+#### If desktop does not appear after installing kernel and reboot,
 then try boot with older verison of kernel in advanced setup on grub.
 And re-install the nvidia-driver by following nvidia installation manual.
 
@@ -60,6 +60,10 @@ And re-install the nvidia-driver by following nvidia installation manual.
 *I think it will works for not only Bionic but also ubuntu focal(20.04), ubuntu hirsute(21.04), ubuntu impish(21.10).
 *If you have trouble in installing NVIDIA driver for old Ubuntu just try and please leave a comment it works or not.
 
+
+### If computer bootup directly with Windows without showing grub screen
+While booting procedure, click del key to enter BIOS setup.
+And set ubuntu higher than winodws in booting priority. Please double check not only GUI interface in BIOS but also detailed setting in boot menu.
 
 ### Install WiFi6 (AX210) Driver
 
