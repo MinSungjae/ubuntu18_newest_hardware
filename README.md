@@ -1,7 +1,7 @@
 # ubuntu18_newest_hardware
 Instruction for installing and setup ubuntu 18.04 for newest hardware
 
-## Installing UBUNTU 18.04 in newest hardware(for me is GIGABYTE YE5 RTX 3080 Ti)
+## Installing UBUNTU 18.04 in newest hardware(for me is GIGABYTE YE5 RTX 3080 Ti and DDR5 mainboard, RTX3090, RTX A6000)
 
 ### Problem:
 The lastest kernel version for ubuntu 18.04 is 5.4.*(for now: 189)
